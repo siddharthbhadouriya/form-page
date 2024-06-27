@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Information Form</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 600px;
+        background-color: #fff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin: 20px auto;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    label {
+        font-weight: bold;
+        display: block;
+        margin-bottom: 8px;
+    }
+    input[type="text"],
+    input[type="number"],
+    select {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    input[type="checkbox"] {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    .form-group:last-child {
+        margin-bottom: 0;
+    }
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 14px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+    }
+    .btn:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h2>User Information Form</h2>
+    <form action="#" method="post">
+        <div class="form-group">
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name" required>
+        </div>
+        <div class="form-group">
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" required>
+        </div>
+        <div class="form-group">
+            <label for="religion">Religion:</label>
+            <select id="religion" name="religion" required>
+                <option value="">Select Religion</option>
+                <option value="Fatain">Fatain</option>
+                <option value="Genflo">Genflo</option>
+                <option value="Maroch">Maroch</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="caste">Caste:</label>
+            <select id="caste" name="caste">
+                <option value="">Select Caste</option>
+                <option value="Kanka">Kanka</option>
+                <option value="Vishkh">Vishkh</option>
+                <option value="Dhula">Dhula</option>
+                <option value="Bhaga">Bhaga</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="party_supporter">Party Supporter:</label>
+            <select id="party_supporter" name="party_supporter" required>
+                <option value="">Select Party</option>
+                <option value="Red Party">Red Party</option>
+                <option value="Green Party">Green Party</option>
+                <option value="Purple Party">Purple Party</option>
+                <option value="Blue Party">Blue Party</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" required>
+        </div>
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+        <div class="form-group">
+            <label for="phone_number">Phone Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required>
+        </div>
+        <div class="form-group">
+            <label for="enrolled">Are you enrolled in 'Deepika Chuta's Freebies for Bhaga-Dhula Scheme'?</label><br>
+            <input type="checkbox" id="enrolled" name="enrolled">
+            <label for="enrolled">Yes, I am enrolled</label>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
